@@ -147,7 +147,7 @@
                 <i class="fa-solid fa-file-lines text-sky-300"></i> 文字版行程表
             </a>
             <a href="https://www.google.com/maps/d/edit?mid=1dQd_1LbhgPMOJI8pydYE5AMoD3okyq0&usp=sharing" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 bg-emerald-600/90 hover:bg-emerald-500 backdrop-blur-md px-4 py-2 rounded-xl text-xs md:text-sm font-bold text-white border border-emerald-400/50 transition-transform shadow-md hover:-translate-y-0.5">
-                <i class="fa-solid fa-map-location-dot text-emerald-200"></i> 點位地圖
+                <i class="fa-solid fa-map-location-dot text-emerald-200"></i> 全點位地圖
             </a>
             <button onclick="openModal('checklistModal')" class="inline-flex items-center gap-1.5 bg-amber-600/90 hover:bg-amber-500 backdrop-blur-md px-4 py-2 rounded-xl text-xs md:text-sm font-bold text-white border border-amber-400/50 transition-transform shadow-md hover:-translate-y-0.5">
                 <i class="fa-solid fa-list-check text-amber-200"></i> 行程 Check List
@@ -161,7 +161,7 @@
         <div class="flex space-x-2 px-2 min-w-max justify-start sm:justify-center">
             <button onclick="showDay(1)" id="btn-day1" class="day-btn active px-5 py-2 rounded-xl font-bold text-gray-700 bg-gray-100/90 border border-gray-200">
                 <div class="text-[10px] opacity-75">9/25 (五)</div>
-                <div class="text-sm font-black">Day 1｜抵達與探索</div>
+                <div class="text-sm font-black">Day 1｜抵達探索</div>
             </button>
             <button onclick="showDay(2)" id="btn-day2" class="day-btn px-5 py-2 rounded-xl font-bold text-gray-700 bg-gray-100/90 border border-gray-200">
                 <div class="text-[10px] opacity-75">9/26 (六)</div>
@@ -169,11 +169,11 @@
             </button>
             <button onclick="showDay(3)" id="btn-day3" class="day-btn px-5 py-2 rounded-xl font-bold text-gray-700 bg-gray-100/90 border border-gray-200">
                 <div class="text-[10px] opacity-75">9/27 (日)</div>
-                <div class="text-sm font-black">Day 3｜水族館與燒肉</div>
+                <div class="text-sm font-black">Day 3｜水族館燒肉</div>
             </button>
             <button onclick="showDay(4)" id="btn-day4" class="day-btn px-5 py-2 rounded-xl font-bold text-gray-700 bg-gray-100/90 border border-gray-200">
                 <div class="text-[10px] opacity-75">9/28 (一)</div>
-                <div class="text-sm font-black">Day 4｜退房與還車</div>
+                <div class="text-sm font-black">Day 4｜撤退紀律</div>
             </button>
         </div>
     </div>
@@ -217,7 +217,7 @@
                                     <ul class="text-sm text-gray-600 space-y-3 leading-relaxed">
                                         <li class="flex items-start"><i class="fa-solid fa-check text-cyan-500 mt-1 mr-2 shrink-0"></i>1. 華航 CI120 抵達，出關提領行李、如廁。</li>
                                         <li class="flex items-start"><i class="fa-solid fa-person-walking text-cyan-500 mt-1 mr-2 shrink-0"></i>2. 🚶 <strong>【國際線抵達 → 步行至國內線接駁區 10-A (R-10) → OTS】：</strong>全員依此動線搭乘接駁車。</li>
-                                        <li class="flex items-start"><i class="fa-solid fa-bus text-cyan-500 mt-1 mr-2 shrink-0"></i>3. <strong>第一班接駁為目標</strong>，12:35 前完成 OTS 報到流程即可。</li>
+                                        <li class="flex items-start"><i class="fa-solid fa-bus text-cyan-500 mt-1 mr-2 shrink-0"></i>3. 第一班接駁為目標，12:35 前完成 OTS 報到流程即可。</li>
                                     </ul>
                                 </div>
                             </div>
@@ -282,9 +282,6 @@
             <div class="relative mb-8 pl-6">
                 <div class="timeline-node bg-cyan-500"></div>
                 <div class="glass-card rounded-2xl overflow-hidden">
-                    <div class="h-28 sm:h-36 bg-gray-200 relative img-gradient">
-                        <img src="https://lh3.googleusercontent.com/d/1JyrMawrVgUloMjNnA864DNC2GGxeTy1C" class="w-full h-full object-cover" alt="前往沖繩世界" onerror="this.src='https://placehold.co/800x400/0284c7/ffffff?text=前往沖繩世界'">
-                    </div>
                     <div class="p-5 cursor-pointer relative transition-colors hover:bg-slate-50" onclick="toggleCard(this)">
                         <div class="absolute right-5 top-5 text-gray-400 transition-transform duration-300 chevron-icon text-lg">
                             <i class="fa-solid fa-chevron-down"></i>
@@ -360,7 +357,7 @@
                 <div class="timeline-node bg-cyan-500"></div>
                 <div class="glass-card rounded-2xl overflow-hidden">
                     <div class="h-28 sm:h-36 bg-gray-200 relative img-gradient">
-                        <img src="https://lh3.googleusercontent.com/d/1MKcK4Q5273NnKgZ1XMcPWt-55JKk8EZW" class="w-full h-full object-cover" alt="玉泉洞" onerror="this.src='https://placehold.co/800x400/0284c7/ffffff?text=玉泉洞'">
+                        <img src="https://lh3.googleusercontent.com/d/1JyrMawrVgUloMjNnA864DNC2GGxeTy1C" class="w-full h-full object-cover" alt="玉泉洞" onerror="this.src='https://placehold.co/800x400/0284c7/ffffff?text=玉泉洞'">
                     </div>
                     <div class="p-5 cursor-pointer relative transition-colors hover:bg-slate-50" onclick="toggleCard(this)">
                         <div class="absolute right-5 top-5 text-gray-400 transition-transform duration-300 chevron-icon text-lg">
@@ -1063,7 +1060,7 @@
                                         </td>
                                         <td class="p-3 leading-relaxed bg-emerald-50/20">
                                             🌅 <strong>【東江海岸傍晚散步／海景 Bonus】</strong><br>
-                                            17:00–17:30 飯店後方海岸散步、看海（自由參加，累了就直接休息）。
+                                            17:00–17:30 飯店後方海岸散步、看海（名護日落約 18:22，此為日落前夕景致，自由參加，累了就直接休息）。
                                         </td>
                                     </tr>
                                     <tr>
@@ -1115,18 +1112,543 @@
             </div>
             Day 3｜水族館與全家燒肉大會
         </h2>
-        <div class="glass-card p-5 rounded-2xl border border-blue-200 bg-white shadow-sm mb-6 text-sm text-gray-700 text-center">
-            請點擊導航列切換天數。
+
+        <!-- 核心原則 Card (Collapsible) -->
+        <div class="glass-card rounded-2xl p-5 mb-8 border-l-8 border-l-blue-600 shadow-sm border border-gray-200 bg-white cursor-pointer transition-colors hover:bg-slate-50 relative" onclick="toggleCard(this)">
+            <div class="absolute right-5 top-5 text-gray-400 transition-transform duration-300 chevron-icon text-lg">
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="pr-8">
+                <h3 class="font-black text-blue-950 text-base flex items-center">
+                    <i class="fa-solid fa-star text-yellow-500 mr-2 text-lg"></i>🌟 家庭旅遊核心原則
+                </h3>
+            </div>
+            
+            <div class="accordion-content">
+                <div class="accordion-inner">
+                    <div class="pt-4 mt-2 border-t border-gray-200">
+                        <ul class="text-sm text-gray-700 space-y-3">
+                            <li class="flex items-start"><i class="fa-solid fa-eye text-blue-500 mt-1 mr-2 shrink-0"></i><div><strong class="text-blue-900">不搶水槽第一排：</strong>尋找最舒適的觀賞視野。</div></li>
+                            <li class="flex items-start bg-red-50 p-3 rounded-lg border border-red-100"><i class="fa-solid fa-thumbtack text-red-500 mt-1 mr-2 shrink-0"></i><div><strong class="text-red-800">全日 6 個核心觀賞／集合節點：</strong><br>【09:20 全團集合完成、09:30 鬼蝠魟、11:15 海豚劇場到位、11:30 海豚秀、14:40 鯨鯊卡位、15:00 鯨鯊餵食】；另設撤退點【15:35 正式撤退】。</div></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mobile-timeline">
+            <!-- 07:15 車1先發出發 -->
+            <div class="relative mb-10 pl-6">
+                <div class="timeline-node bg-red-500"></div>
+                <div class="glass-card rounded-2xl overflow-hidden border border-gray-200 bg-red-50/10">
+                    <div class="p-5 cursor-pointer relative transition-colors hover:bg-red-50/30" onclick="toggleCard(this)">
+                        <div class="absolute right-5 top-5 text-gray-400 transition-transform duration-300 chevron-icon text-lg">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="pr-8">
+                            <div class="flex flex-wrap items-center gap-2 mb-2">
+                                <span class="inline-flex items-center justify-center bg-slate-800 text-white px-2.5 py-1 rounded-lg text-xs font-black tracking-wide shadow-sm">
+                                    <i class="fa-regular fa-clock mr-1 opacity-80"></i>07:15
+                                </span>
+                                <span class="inline-flex items-center gap-1 px-2 py-1 rounded-md text-[11px] font-bold bg-red-100 text-red-700 border border-red-200">
+                                    <i class="fa-solid fa-car"></i> 車1先發
+                                </span>
+                            </div>
+                            <h4 class="text-gray-900 font-black text-base leading-snug">🔴 【車1先發出發】</h4>
+                        </div>
+                        
+                        <div class="accordion-content">
+                            <div class="accordion-inner">
+                                <div class="pt-2">
+                                    <p class="text-sm text-gray-600 leading-relaxed"><strong>第 1 車（先鋒）07:15 出發。</strong>沿 449 縣道北上。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 07:35-07:40 車2出發 -->
+            <div class="relative mb-10 pl-6">
+                <div class="timeline-node bg-blue-500"></div>
+                <div class="glass-card rounded-2xl overflow-hidden border border-gray-200">
+                    <div class="p-5 cursor-pointer relative transition-colors hover:bg-slate-50" onclick="toggleCard(this)">
+                        <div class="absolute right-5 top-5 text-gray-400 transition-transform duration-300 chevron-icon text-lg">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="pr-8">
+                            <div class="flex flex-wrap items-center gap-2 mb-2">
+                                <span class="inline-flex items-center justify-center bg-slate-800 text-white px-2.5 py-1 rounded-lg text-xs font-black tracking-wide shadow-sm">
+                                    <i class="fa-regular fa-clock mr-1 opacity-80"></i>07:35 - 07:40
+                                </span>
+                                <span class="inline-flex items-center gap-1 px-2 py-1 rounded-md text-[11px] font-bold bg-blue-100 text-blue-700 border border-blue-200">
+                                    <i class="fa-solid fa-car"></i> 車2出發
+                                </span>
+                            </div>
+                            <h4 class="text-gray-900 font-black text-base leading-snug">🔴 【車2出發】</h4>
+                        </div>
+                        
+                        <div class="accordion-content">
+                            <div class="accordion-inner">
+                                <div class="pt-2">
+                                    <p class="text-sm text-gray-600 leading-relaxed"><strong>第 2 車（主力）07:35～07:40 出發。</strong>獨立導航前往水族館。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 08:00-08:15 車1抵達 P7 & 探路 -->
+            <div class="relative mb-10 pl-6">
+                <div class="timeline-node bg-red-500"></div>
+                <div class="glass-card rounded-2xl overflow-hidden border border-gray-200">
+                    <div class="h-28 sm:h-36 bg-gray-200 relative img-gradient">
+                        <img src="https://lh3.googleusercontent.com/d/1-pT6aHXr3VwKFwX99uoLzFQjLsTJeT_0" class="w-full h-full object-cover" alt="抵達P7" onerror="this.src='https://placehold.co/800x400/2563eb/ffffff?text=P7立體停車場'">
+                    </div>
+                    <div class="p-5 cursor-pointer relative transition-colors hover:bg-slate-50" onclick="toggleCard(this)">
+                        <div class="absolute right-5 top-5 text-gray-400 transition-transform duration-300 chevron-icon text-lg">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="pr-8">
+                            <div class="flex flex-wrap items-center gap-2 mb-2">
+                                <span class="inline-flex items-center justify-center bg-slate-800 text-white px-2.5 py-1 rounded-lg text-xs font-black tracking-wide shadow-sm">
+                                    <i class="fa-regular fa-clock mr-1 opacity-80"></i>08:00 - 08:15
+                                </span>
+                                <span class="inline-flex items-center gap-1 px-2 py-1 rounded-md text-[11px] font-bold bg-amber-100 text-amber-700 border border-amber-200">
+                                    <i class="fa-solid fa-gift"></i> 降級 Bonus
+                                </span>
+                            </div>
+                            <h4 class="text-gray-900 font-black text-base leading-snug">🏃 【車1抵達 P7 ＆ 探路】</h4>
+                        </div>
+                        
+                        <div class="accordion-content">
+                            <div class="accordion-inner">
+                                <div class="pt-3 pb-2">
+                                    <ul class="text-sm text-gray-600 space-y-3 leading-relaxed">
+                                        <li class="flex items-start"><i class="fa-solid fa-square-parking text-blue-500 mt-1 mr-2 shrink-0"></i>車 1 於 08:00～08:15 抵達 P7。車 1 負責先確認入口及集合位置。</li>
+                                        <li class="flex items-start bg-amber-50 p-2.5 rounded-lg border border-amber-100"><i class="fa-solid fa-triangle-exclamation text-amber-600 mt-0.5 mr-2 shrink-0"></i><strong class="text-amber-800">🟡 【Ocean Blue 景觀席】：</strong>車 1 可先確認，快速取得 → 保留；需要排隊／等待 → 直接放棄。絕不得影響 09:20 集合及 09:30 鬼蝠魟。</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-4">
+                            <a href="https://www.google.com/maps/search/?api=1&query=海洋博公園+P7立體停車場" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()" class="flex items-center justify-center w-full min-h-[48px] bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl transition-all text-sm shadow-md active:scale-[0.98] gap-2">
+                                <i class="fa-solid fa-square-parking text-lg"></i> P7 北立體停車場導航
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 08:35-08:50 車2抵達 & 全團集合完成 -->
+            <div class="relative mb-10 pl-6">
+                <div class="timeline-node bg-blue-500"></div>
+                <div class="glass-card rounded-2xl overflow-hidden border border-gray-200">
+                    <div class="p-5 cursor-pointer relative transition-colors hover:bg-slate-50" onclick="toggleCard(this)">
+                        <div class="absolute right-5 top-5 text-gray-400 transition-transform duration-300 chevron-icon text-lg">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="pr-8">
+                            <div class="flex flex-wrap items-center gap-2 mb-2">
+                                <span class="inline-flex items-center justify-center bg-slate-800 text-white px-2.5 py-1 rounded-lg text-xs font-black tracking-wide shadow-sm">
+                                    <i class="fa-regular fa-clock mr-1 opacity-80"></i>08:35 - 09:20
+                                </span>
+                                <span class="inline-flex items-center gap-1 px-2 py-1 rounded-md text-[11px] font-bold bg-red-100 text-red-700 border border-red-200">
+                                    <i class="fa-solid fa-users"></i> 全團集合完成
+                                </span>
+                            </div>
+                            <h4 class="text-gray-900 font-black text-base leading-snug">🚶 【車2抵達 ＆ 集合完成】</h4>
+                        </div>
+                        
+                        <div class="accordion-content">
+                            <div class="accordion-inner">
+                                <div class="pt-2 pb-2">
+                                    <ul class="text-sm text-gray-600 space-y-2 leading-relaxed">
+                                        <li class="flex items-start"><i class="fa-solid fa-walking text-blue-500 mt-1 mr-2 shrink-0"></i>🔴 車 2 最遲於 08:50 前抵達 P7。長輩、小孩優先如廁。</li>
+                                        <li class="flex items-start"><i class="fa-solid fa-clock text-red-500 mt-1 mr-2 shrink-0"></i><strong class="text-red-600 font-bold block mt-1">🔴 09:20 前全團大水槽附近集合完成。</strong></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-4">
+                            <a href="https://www.google.com/maps/search/?api=1&query=美麗海水族館" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()" class="flex items-center justify-center w-full min-h-[48px] bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl transition-all text-sm shadow-md active:scale-[0.98] gap-2">
+                                <i class="fa-solid fa-location-dot text-lg"></i> 美麗海水族館導航
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 09:30 鬼蝠魟 -->
+            <div class="relative mb-10 pl-6">
+                <div class="timeline-node bg-red-500"></div>
+                <div class="glass-card rounded-2xl overflow-hidden border border-gray-200">
+                    <div class="h-28 sm:h-36 bg-gray-200 relative img-gradient">
+                        <img src="https://lh3.googleusercontent.com/d/1oMWXsSsf6r6N7O3399zscRET0py6Z_OI" class="w-full h-full object-cover" alt="鬼蝠魟" onerror="this.src='https://placehold.co/800x400/2563eb/ffffff?text=黑潮之海鬼蝠魟'">
+                    </div>
+                    <div class="p-5 cursor-pointer relative transition-colors hover:bg-slate-50" onclick="toggleCard(this)">
+                        <div class="absolute right-5 top-5 text-gray-400 transition-transform duration-300 chevron-icon text-lg">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="pr-8">
+                            <div class="flex flex-wrap items-center gap-2 mb-2">
+                                <span class="inline-flex items-center justify-center bg-slate-800 text-white px-2.5 py-1 rounded-lg text-xs font-black tracking-wide shadow-sm">
+                                    <i class="fa-regular fa-clock mr-1 opacity-80"></i>09:30
+                                </span>
+                                <span class="inline-flex items-center gap-1 px-2 py-1 rounded-md text-[11px] font-bold bg-red-100 text-red-700 border border-red-200">
+                                    <i class="fa-solid fa-location-crosshairs"></i> 核心觀賞
+                                </span>
+                            </div>
+                            <h4 class="text-gray-900 font-black text-base leading-snug">🔴 【鬼蝠魟】</h4>
+                        </div>
+                        
+                        <div class="accordion-content">
+                            <div class="accordion-inner">
+                                <div class="pt-2">
+                                    <p class="text-sm text-gray-600 leading-relaxed">若有抽到景觀席則在窗邊看，否則全團在大水槽正面同步觀賞。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 10:00-10:45 黑潮探險 -->
+            <div class="relative mb-10 pl-6">
+                <div class="timeline-node bg-green-500"></div>
+                <div class="glass-card rounded-2xl overflow-hidden border border-gray-200">
+                    <div class="h-28 sm:h-36 bg-gray-200 relative img-gradient">
+                        <img src="https://lh3.googleusercontent.com/d/14FNbPVABedYFAF8Y5VcH5jYcCrq_GLDZ" class="w-full h-full object-cover" alt="黑潮探險" onerror="this.src='https://placehold.co/800x400/22c55e/ffffff?text=黑潮探險'">
+                    </div>
+                    <div class="p-5 cursor-pointer relative transition-colors hover:bg-slate-50" onclick="toggleCard(this)">
+                        <div class="absolute right-5 top-5 text-gray-400 transition-transform duration-300 chevron-icon text-lg">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="pr-8">
+                            <div class="flex flex-wrap items-center gap-2 mb-2">
+                                <span class="inline-flex items-center justify-center bg-slate-800 text-white px-2.5 py-1 rounded-lg text-xs font-black tracking-wide shadow-sm">
+                                    <i class="fa-regular fa-clock mr-1 opacity-80"></i>10:00 - 10:45
+                                </span>
+                                <span class="inline-flex items-center gap-1 px-2 py-1 rounded-md text-[11px] font-bold bg-green-100 text-green-700 border border-green-200">
+                                    <i class="fa-solid fa-leaf"></i> 彈性享受
+                                </span>
+                            </div>
+                            <h4 class="text-gray-900 font-black text-base leading-snug">🟢 【黑潮探險 Bonus】</h4>
+                        </div>
+                        
+                        <div class="accordion-content">
+                            <div class="accordion-inner">
+                                <div class="pt-2 pb-2">
+                                    <p class="text-sm text-gray-600 leading-relaxed">搭「專用電梯」直達頂部步道。最多 45 分鐘；若 09:30 鬼蝠魟活動延誤或團體狀態不佳，自動縮短或取消，不得影響 11:15 海豚劇場到位。</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-4">
+                            <a href="https://www.google.com/maps/search/?api=1&query=美麗海水族館" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()" class="flex items-center justify-center w-full min-h-[48px] bg-green-600 hover:bg-green-700 text-white font-bold rounded-xl transition-all text-sm shadow-md active:scale-[0.98] gap-2">
+                                <i class="fa-solid fa-water text-lg"></i> 美麗海水族館導航
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 11:15-11:50 劇場到位 ＆ 海豚秀 -->
+            <div class="relative mb-10 pl-6">
+                <div class="timeline-node bg-blue-500"></div>
+                <div class="glass-card rounded-2xl overflow-hidden border border-gray-200">
+                    <div class="h-28 sm:h-36 bg-gray-200 relative img-gradient">
+                        <img src="https://lh3.googleusercontent.com/d/19rm7jw0t87X0XCL5XugBp-k6OE_C_FNz" class="w-full h-full object-cover" alt="海豚秀" onerror="this.src='https://placehold.co/800x400/2563eb/ffffff?text=海豚劇場表演'">
+                    </div>
+                    <div class="p-5 cursor-pointer relative transition-colors hover:bg-slate-50" onclick="toggleCard(this)">
+                        <div class="absolute right-5 top-5 text-gray-400 transition-transform duration-300 chevron-icon text-lg">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="pr-8">
+                            <div class="flex flex-wrap items-center gap-2 mb-2">
+                                <span class="inline-flex items-center justify-center bg-slate-800 text-white px-2.5 py-1 rounded-lg text-xs font-black tracking-wide shadow-sm">
+                                    <i class="fa-regular fa-clock mr-1 opacity-80"></i>11:15 - 11:50
+                                </span>
+                            </div>
+                            <h4 class="text-gray-900 font-black text-base leading-snug">🚶 🔴【劇場到位 ＆ 海豚秀】</h4>
+                        </div>
+                        
+                        <div class="accordion-content">
+                            <div class="accordion-inner">
+                                <div class="pt-2 pb-2">
+                                    <ul class="text-sm text-gray-600 space-y-3 leading-relaxed">
+                                        <li class="flex items-start"><i class="fa-solid fa-person-walking text-gray-400 mt-1 mr-2 shrink-0"></i>蓋手章、保留票根、強制如廁，<strong class="text-red-600 font-bold">🔴 11:15 海豚劇場到位。</strong></li>
+                                        <li class="flex items-start"><i class="fa-solid fa-star text-amber-500 mt-1 mr-2 shrink-0"></i><strong class="text-red-600 font-bold">🔴 11:30 【海豚秀】：</strong>巨大遮陽屋頂遮蔽強光，全團在陰涼處舒適觀賞。</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-4">
+                            <a href="https://www.google.com/maps/search/?api=1&query=海豚劇場" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()" class="flex items-center justify-center w-full min-h-[48px] bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl transition-all text-sm shadow-md active:scale-[0.98] gap-2">
+                                <i class="fa-solid fa-masks-theater text-lg"></i> 海豚劇場導航
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 12:00-13:00 午餐避峰 -->
+            <div class="relative mb-10 pl-6">
+                <div class="timeline-node bg-sky-500"></div>
+                <div class="glass-card rounded-2xl overflow-hidden border border-gray-200">
+                    <div class="h-28 sm:h-36 bg-gray-200 relative img-gradient">
+                        <img src="https://lh3.googleusercontent.com/d/1fmKHUElJm0AkqwEOB8QzvOudiY1v-ziK" class="w-full h-full object-cover" alt="美海廣場休息" onerror="this.src='https://placehold.co/800x400/0ea5e9/ffffff?text=美海廣場室內休息'">
+                    </div>
+                    <div class="p-5 cursor-pointer relative transition-colors hover:bg-slate-50" onclick="toggleCard(this)">
+                        <div class="absolute right-5 top-5 text-gray-400 transition-transform duration-300 chevron-icon text-lg">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="pr-8">
+                            <div class="flex flex-wrap items-center gap-2 mb-2">
+                                <span class="inline-flex items-center justify-center bg-slate-800 text-white px-2.5 py-1 rounded-lg text-xs font-black tracking-wide shadow-sm">
+                                    <i class="fa-regular fa-clock mr-1 opacity-80"></i>12:00 - 13:00
+                                </span>
+                                <span class="inline-flex items-center gap-1 px-2 py-1 rounded-md text-[11px] font-bold bg-green-100 text-green-700 border border-green-200">
+                                    <i class="fa-solid fa-leaf"></i> 彈性享受
+                                </span>
+                            </div>
+                            <h4 class="text-gray-900 font-black text-base leading-snug">🍱 【午餐】美海廣場休息</h4>
+                        </div>
+                        
+                        <div class="accordion-content">
+                            <div class="accordion-inner">
+                                <div class="pt-2 pb-2">
+                                    <p class="text-sm text-gray-600 leading-relaxed">休息／午餐，座位依現場狀況安排。</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-4">
+                            <a href="https://www.google.com/maps/search/?api=1&query=海洋博公園+綜合休息處" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()" class="flex items-center justify-center w-full min-h-[48px] bg-sky-600 hover:bg-sky-700 text-white font-bold rounded-xl transition-all text-sm shadow-md active:scale-[0.98] gap-2">
+                                <i class="fa-solid fa-snowflake text-lg"></i> 美海廣場導航
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 13:00-14:40 避暑自由漫遊 -->
+            <div class="relative mb-10 pl-6">
+                <div class="timeline-node bg-green-500"></div>
+                <div class="glass-card rounded-2xl overflow-hidden border border-gray-200">
+                    <div class="h-28 sm:h-36 bg-gray-200 relative img-gradient">
+                        <img src="https://lh3.googleusercontent.com/d/1f0HHeIHgDqWx5gE53vALB5-0uX1MF8J5" class="w-full h-full object-cover" alt="自由漫遊" onerror="this.src='https://placehold.co/800x400/22c55e/ffffff?text=海龜館自由漫遊'">
+                    </div>
+                    <div class="p-5 cursor-pointer relative transition-colors hover:bg-slate-50" onclick="toggleCard(this)">
+                        <div class="absolute right-5 top-5 text-gray-400 transition-transform duration-300 chevron-icon text-lg">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="pr-8">
+                            <div class="flex flex-wrap items-center gap-2 mb-2">
+                                <span class="inline-flex items-center justify-center bg-slate-800 text-white px-2.5 py-1 rounded-lg text-xs font-black tracking-wide shadow-sm">
+                                    <i class="fa-regular fa-clock mr-1 opacity-80"></i>13:00 - 14:40
+                                </span>
+                                <span class="inline-flex items-center gap-1 px-2 py-1 rounded-md text-[11px] font-bold bg-green-100 text-green-700 border border-green-200">
+                                    <i class="fa-solid fa-shoe-prints"></i> 自由漫遊
+                                </span>
+                            </div>
+                            <h4 class="text-gray-900 font-black text-base leading-snug">🟢 【自由漫遊】</h4>
+                        </div>
+                        
+                        <div class="accordion-content">
+                            <div class="accordion-inner">
+                                <div class="pt-2 pb-2">
+                                    <p class="text-sm text-gray-600 leading-relaxed">海龜／海牛區，慢慢逛並可憑手章再次入館。</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-4">
+                            <a href="https://www.google.com/maps/search/?api=1&query=海龜館" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()" class="flex items-center justify-center w-full min-h-[48px] bg-green-600 hover:bg-green-700 text-white font-bold rounded-xl transition-all text-sm shadow-md active:scale-[0.98] gap-2">
+                                <i class="fa-solid fa-water text-lg"></i> 海龜館導航
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 14:40-15:20 鯨鯊卡位 ＆ 餵食秀 -->
+            <div class="relative mb-10 pl-6">
+                <div class="timeline-node bg-blue-500"></div>
+                <div class="glass-card rounded-2xl overflow-hidden border border-gray-200">
+                    <div class="h-28 sm:h-36 bg-gray-200 relative img-gradient">
+                        <img src="https://lh3.googleusercontent.com/d/1c8lcyk-bazPY1foaXNfcE5cg1TmWKr5P" class="w-full h-full object-cover" alt="鯨鯊秀" onerror="this.src='https://placehold.co/800x400/2563eb/ffffff?text=鯨鯊餵食解說'">
+                    </div>
+                    <div class="p-5 cursor-pointer relative transition-colors hover:bg-slate-50" onclick="toggleCard(this)">
+                        <div class="absolute right-5 top-5 text-gray-400 transition-transform duration-300 chevron-icon text-lg">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="pr-8">
+                            <div class="flex flex-wrap items-center gap-2 mb-2">
+                                <span class="inline-flex items-center justify-center bg-slate-800 text-white px-2.5 py-1 rounded-lg text-xs font-black tracking-wide shadow-sm">
+                                    <i class="fa-regular fa-clock mr-1 opacity-80"></i>14:40 - 15:20
+                                </span>
+                                <span class="inline-flex items-center gap-1 px-2 py-1 rounded-md text-[11px] font-bold bg-red-100 text-red-700 border border-red-200">
+                                    <i class="fa-solid fa-location-crosshairs"></i> 核心觀賞
+                                </span>
+                            </div>
+                            <h4 class="text-gray-900 font-black text-base leading-snug">🔴 【鯨鯊卡位 ＆ 餵食秀】</h4>
+                        </div>
+                        
+                        <div class="accordion-content">
+                            <div class="accordion-inner">
+                                <div class="pt-3 pb-2">
+                                    <ul class="text-sm text-gray-600 space-y-3 leading-relaxed">
+                                        <li class="flex items-start"><i class="fa-solid fa-street-view text-blue-500 mt-1 mr-2 shrink-0"></i><strong class="text-red-600 font-bold">🔴 14:40 【鯨鯊卡位】：</strong>全員至「1F 大水槽正面中後方開闊區」卡位集合。</li>
+                                        <li class="flex items-start bg-blue-50 p-2.5 rounded-lg border border-blue-100"><i class="fa-solid fa-circle-info text-blue-600 mt-0.5 mr-2 shrink-0"></i><strong class="text-blue-900">不搶第一排玻璃、不上高處階梯，以官方推薦為最高原則。</strong></li>
+                                        <li class="flex items-start"><i class="fa-solid fa-eye text-blue-500 mt-1 mr-2 shrink-0"></i><strong class="text-red-600 font-bold">🔴 15:00–15:20 【鯨鯊餵食】：</strong>觀看鯨鯊垂直大口吞水全景。</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-4">
+                            <a href="https://www.google.com/maps/search/?api=1&query=美麗海水族館" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()" class="flex items-center justify-center w-full min-h-[48px] bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl transition-all text-sm shadow-md active:scale-[0.98] gap-2">
+                                <i class="fa-solid fa-video text-lg"></i> 美麗海水族館導航
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 15:20-16:10 撤退紀律與發車 -->
+            <div class="relative mb-10 pl-6">
+                <div class="timeline-node bg-red-500"></div>
+                <div class="glass-card rounded-2xl overflow-hidden border-l-4 border-l-red-500">
+                    <div class="p-5 cursor-pointer relative transition-colors hover:bg-slate-50" onclick="toggleCard(this)">
+                        <div class="absolute right-5 top-5 text-gray-400 transition-transform duration-300 chevron-icon text-lg">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="pr-8">
+                            <div class="flex flex-wrap items-center gap-2 mb-2">
+                                <span class="inline-flex items-center justify-center bg-slate-800 text-white px-2.5 py-1 rounded-lg text-xs font-black tracking-wide shadow-sm">
+                                    <i class="fa-regular fa-clock mr-1 opacity-80"></i>15:20 - 16:10
+                                </span>
+                                <span class="inline-flex items-center gap-1 px-2 py-1 rounded-md text-[11px] font-bold bg-red-100 text-red-700 border border-red-200">
+                                    <i class="fa-solid fa-shield-halved"></i> 撤退防線
+                                </span>
+                            </div>
+                            <h4 class="text-gray-900 font-black text-base leading-snug">🔴 【撤退紀律與 P7 發車】</h4>
+                        </div>
+                        
+                        <div class="accordion-content">
+                            <div class="accordion-inner">
+                                <div class="pt-3 pb-2">
+                                    <ul class="text-sm text-gray-600 space-y-3 leading-relaxed">
+                                        <li class="flex items-start"><i class="fa-solid fa-toilet text-gray-400 mt-1 mr-2 shrink-0"></i><strong>15:20–15:30 🚽 【如廁與確認】：</strong>快速如廁與確認。</li>
+                                        <li class="flex items-start"><i class="fa-solid fa-person-walking text-gray-400 mt-1 mr-2 shrink-0"></i><strong>15:30 🚶 【開始往出口】：</strong>🔴 15:30 開始往出口移動。</li>
+                                        <li class="flex items-start bg-red-50 p-2.5 rounded-lg border border-red-100"><i class="fa-solid fa-person-running text-red-600 mt-0.5 mr-2 shrink-0"></i><div><strong class="text-red-700">🔴 15:35 【正式撤退】：</strong>正式撤退往 P7。15:35 之後：不買紀念品、不拍照拖延、不追加 Bonus、不等待個別成員。</div></li>
+                                        <li class="flex items-start"><i class="fa-solid fa-car-side text-red-600 mt-1 mr-2 shrink-0"></i><strong class="text-red-600">🔴 16:10 【P7最晚發車】：</strong>最晚離開 P7，前往名護（車上可小睡）。徹底瓦解南下塞車威脅。</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-4">
+                            <a href="https://www.google.com/maps/search/?api=1&query=海洋博公園+P7立體停車場" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()" class="flex items-center justify-center w-full min-h-[48px] bg-red-600 hover:bg-red-700 text-white font-bold rounded-xl transition-all text-sm shadow-md active:scale-[0.98] gap-2">
+                                <i class="fa-solid fa-car-side text-lg"></i> P7 北立體停車場導航
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 17:20-17:45 燒肉大會 -->
+            <div class="relative mb-10 pl-6">
+                <div class="timeline-node bg-blue-500"></div>
+                <div class="glass-card rounded-2xl overflow-hidden border border-gray-200">
+                    <div class="h-28 sm:h-36 bg-gray-200 relative img-gradient">
+                        <img src="https://lh3.googleusercontent.com/d/1CQ8Vi1WFj-U4LA_xva2fnUd5U0KTvq99" class="w-full h-full object-cover" alt="燒肉本部牧場" onerror="this.src='https://placehold.co/800x400/dc2626/ffffff?text=燒肉本部牧場名護店'">
+                    </div>
+                    <div class="p-5 cursor-pointer relative transition-colors hover:bg-slate-50" onclick="toggleCard(this)">
+                        <div class="absolute right-5 top-5 text-gray-400 transition-transform duration-300 chevron-icon text-lg">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="pr-8">
+                            <div class="flex flex-wrap items-center gap-2 mb-2">
+                                <span class="inline-flex items-center justify-center bg-slate-800 text-white px-2.5 py-1 rounded-lg text-xs font-black tracking-wide shadow-sm">
+                                    <i class="fa-regular fa-clock mr-1 opacity-80"></i>17:20 - 17:45
+                                </span>
+                                <span class="inline-flex items-center gap-1 px-2 py-1 rounded-md text-[11px] font-mono bg-red-100 text-red-800 border border-red-200 font-bold">
+                                    <i class="fa-solid fa-hashtag"></i> 預約單號 9ASHJD
+                                </span>
+                            </div>
+                            <h4 class="text-gray-900 font-black text-base leading-snug">🥩 🔴 【燒肉報到 ＆ 全員合體】</h4>
+                        </div>
+                        
+                        <div class="accordion-content">
+                            <div class="accordion-inner">
+                                <div class="pt-3 pb-2">
+                                    <ul class="text-sm text-gray-600 space-y-3 leading-relaxed">
+                                        <li class="flex items-start"><i class="fa-solid fa-pen-to-square text-red-500 mt-1 mr-2 shrink-0"></i><strong class="text-red-700">🔴 17:20【燒肉報到】：</strong>抵達燒肉本部牧場 名護店，車 1 先持單號 9ASHJD 報到保位。</li>
+                                        <li class="flex items-start"><i class="fa-solid fa-people-group text-blue-500 mt-1 mr-2 shrink-0"></i><strong class="text-blue-800">👨‍👩‍👧‍👦 17:35【全員合體】：</strong>與另外 3 位親屬會合！12 人全員合體完畢。</li>
+                                        <li class="flex items-start"><i class="fa-solid fa-utensils text-amber-500 mt-1 mr-2 shrink-0"></i><strong class="text-red-600">🔴 17:45【入席】：</strong>全團 12 人準時入席。餐後開車返回櫻之家休息。</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-4">
+                            <a href="https://www.google.com/maps/search/?api=1&query=燒肉本部牧場+名護店" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()" class="flex items-center justify-center w-full min-h-[48px] bg-red-600 hover:bg-red-700 text-white font-bold rounded-xl transition-all text-sm shadow-md active:scale-[0.98] gap-2">
+                                <i class="fa-solid fa-fire text-lg"></i> 燒肉本部牧場名護店導航
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 20:00 回飯店 -->
+            <div class="relative mb-10 pl-6">
+                <div class="timeline-node bg-blue-500"></div>
+                <div class="glass-card rounded-2xl overflow-hidden border border-gray-200">
+                    <div class="p-5 cursor-pointer relative transition-colors hover:bg-slate-50" onclick="toggleCard(this)">
+                        <div class="absolute right-5 top-5 text-gray-400 transition-transform duration-300 chevron-icon text-lg">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="pr-8">
+                            <div class="flex flex-wrap items-center gap-2 mb-2">
+                                <span class="inline-flex items-center justify-center bg-slate-800 text-white px-2.5 py-1 rounded-lg text-xs font-black tracking-wide shadow-sm">
+                                    <i class="fa-regular fa-clock mr-1 opacity-80"></i>20:00 起
+                                </span>
+                            </div>
+                            <h4 class="text-gray-900 font-black text-base leading-snug">🏨 回飯店休息</h4>
+                        </div>
+                        
+                        <div class="accordion-content">
+                            <div class="accordion-inner">
+                                <div class="pt-2 pb-2">
+                                    <p class="text-sm text-gray-600 mb-2 leading-relaxed">開車返回櫻之家飯店休息。</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-4">
+                            <a href="https://www.google.com/maps/search/?api=1&query=名護櫻之家飯店" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()" class="flex items-center justify-center w-full min-h-[48px] bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl transition-all text-sm shadow-md active:scale-[0.98] gap-2">
+                                <i class="fa-solid fa-hotel text-lg"></i> 名護櫻之家導航
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
     <!-- ==================== Day 4 ==================== -->
-    <div id="day4" class="day-content block reveal active">
+    <div id="day4" class="day-content hidden reveal">
         <h2 class="text-2xl font-black text-indigo-900 mb-6 flex items-center leading-tight bg-indigo-100/50 p-3 rounded-2xl border border-indigo-200 shadow-sm">
             <div class="bg-indigo-600 text-white w-10 h-10 rounded-full flex items-center justify-center mr-3 shrink-0 shadow-md">
                 <i class="fa-solid fa-plane-departure"></i>
             </div>
-            Day 4｜波上宮快閃、iias 購物、DMM 水族館與返台衝刺
+            Day 4｜波上宮快閃、iias 購物與返台衝刺
         </h2>
 
         <p class="text-sm font-bold text-red-700 bg-red-50 p-3.5 rounded-xl border border-red-200 mb-6 shadow-sm flex items-start leading-relaxed">
@@ -2031,7 +2553,7 @@
 <div id="carModal" class="modal">
     <div class="modal-content">
         <div class="flex justify-between items-center mb-4 border-b pb-2">
-            <h3 class="text-lg font-black text-teal-900"><i class="fa-solid fa-car-side mr-2 text-teal-600"></i>車隊管理規則 ＆ 日本自駕原則</h3>
+            <h3 class="text-lg font-black text-teal-900"><i class="fa-solid fa-car-side mr-2 text-teal-600"></i>車輛編組 ＆ 車隊管理規則</h3>
             <button onclick="closeModal('carModal')" class="text-gray-400 hover:text-gray-600 text-lg"><i class="fa-solid fa-xmark"></i></button>
         </div>
 
@@ -2057,7 +2579,7 @@
             <li>• <strong>🚗 獨立導航與車隊原則：</strong>核心行程精準守時；彈性行程依老小體力隨時捨棄。2 車各自獨立導航，絕不在路上追車、不危險路邊等車。</li>
             <li class="bg-purple-50 p-3 rounded-lg border border-purple-200">
                 <strong class="text-purple-800 block mb-1">🛣️ 高速公路收費車道判斷（極重要）：</strong>
-                <span class="text-purple-700 font-bold">【有 ETC 卡且已插入車機時】</span>：依現場「ETC専用」或「ETC／一般」標示選擇對應車道，減速並依現場限速及 ETC 車道標示通過。<br>
+                <span class="text-purple-700 font-bold">【有 ETC】</span>（本次雙車皆有）：雙車全程行駛高速公路時，一律直行<span class="text-purple-600 font-bold">紫色</span>的「ETC 專用道」，進出閘門減速至 20 km/h 以下感應通過。<br>
                 <span class="text-green-700 font-bold mt-1 block">【無 ETC】</span>：絕對必須走<span class="text-green-600 font-bold">綠色</span>的「一般」車道，上高速需抽票卡，下高速需走人工走道付現或刷卡。
             </li>
         </ul>
@@ -2135,7 +2657,7 @@
     </div>
 </div>
 
-<!-- 行程 Check List Modal -->
+<div id="checklistModal" class="modal">
     <div class="modal-content h-[85vh] flex flex-col" style="max-width: 800px; padding: 20px;">
         <div class="flex justify-between items-center mb-4 border-b pb-2 shrink-0">
             <h3 class="text-lg font-black text-amber-700"><i class="fa-solid fa-list-check mr-2 text-amber-600"></i>行程 Check List</h3>
