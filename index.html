@@ -1,8 +1,54 @@
+已貼上文字 (1)(2).txt
+文件
+
+你現在是一位資深前端工程師與 UI/UX 設計師。請幫我全面優化與美化以下由 AI 生成的網站程式碼。
+
+【優化目標】
+
+    視覺美化：請套用 [現代極簡 / 科技感暗色系 / 活潑可愛 / 專業企業] 風格，重新設計配色、陰影層次與字體排版，提升整體質感。
+    響應式設計 (RWD)：確保排版在手機、平板與桌機環境下皆能完美適配，避免版面破裂。
+    微互動體驗：為按鈕、導覽列、圖片與區塊載入加入平滑的 CSS 動畫與滑鼠懸停 (Hover) 效果。
+    程式碼健壯性：優化 HTML 語義化標籤，並整理 CSS，使其乾淨且易於後續維護。
+
+【技術與限制條件】
+
+    樣式請使用 [原生 CSS / Tailwind CSS / Bootstrap 5]。
+    請務必保留原有的核心功能邏輯與 JavaScript 綁定，絕對不要破壞現有功能。
+    請完整輸出修改後的程式碼，並在最上方簡要條列你做了哪些關鍵的設計決策。
+
+【原始程式碼】
+
+此對話現在使用 Work。復原
+
+已完成網站全面優化，並保留原有 JavaScript 功能與所有行程內容。
+
+關鍵設計調整：
+
+    採用「現代海洋科技感」視覺，重整配色、玻璃質感、陰影與背景層次。
+
+    完善手機、平板及桌機 RWD，加入瀏海螢幕安全距離。
+
+    強化卡片、圖片、按鈕、導覽列與彈窗動畫。
+
+    保留日期切換、卡片展開、導航、Checklist 與所有 Modal 功能。
+
+    新增鍵盤操作、ESC 關閉彈窗、焦點管理及 ARIA 無障礙屬性。
+
+    移除禁止縮放設定，改善行動裝置可讀性。
+
+    支援系統「減少動態效果」偏好。
+
+    JavaScript 語法與檔案完整性已驗證。
+
+下載完整優化版 HTML
+
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#082f49">
+    <meta name="description" content="2026 沖繩 4 天 3 夜家族自駕行程，整合每日動線、導航、航班、住宿與時間紅線。">
     <title>沖繩 4 天 3 夜家族自駕之旅</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -129,6 +175,73 @@
         }
         .modal.active .modal-content { transform: translateY(0); }
         @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+        /* ===== 2026 UI refresh: ocean-tech editorial system ===== */
+        :root {
+            --ink: #0f172a; --surface: rgba(255, 255, 255, 0.92);
+            --line: rgba(14, 116, 144, 0.14); --primary: #0891b2;
+            --shadow-sm: 0 8px 24px rgba(8, 47, 73, 0.08);
+            --shadow-lg: 0 24px 70px rgba(8, 47, 73, 0.16);
+        }
+        *, *::before, *::after { box-sizing: border-box; }
+        html { scroll-padding-top: 7rem; }
+        body {
+            min-height: 100dvh;
+            background: radial-gradient(circle at 8% 4%, rgba(34,211,238,.2), transparent 28rem), radial-gradient(circle at 92% 18%, rgba(14,165,233,.16), transparent 32rem), linear-gradient(180deg,#ecfeff 0%,#f8fafc 38%,#eef6f8 100%);
+            color: var(--ink); line-height: 1.65;
+            padding-bottom: calc(7rem + env(safe-area-inset-bottom));
+        }
+        body::before {
+            content: ""; position: fixed; inset: 0; pointer-events: none; opacity: .22;
+            background-image: radial-gradient(rgba(8,145,178,.18) .7px,transparent .7px);
+            background-size: 18px 18px; mask-image: linear-gradient(to bottom,black,transparent 58%); z-index: -1;
+        }
+        :focus-visible { outline: 3px solid #fbbf24; outline-offset: 3px; border-radius: .65rem; }
+        .hero-bg {
+            isolation: isolate; min-height: clamp(22rem,47vh,35rem);
+            border-radius: 0 0 clamp(2rem,5vw,4rem) clamp(2rem,5vw,4rem) !important;
+            background-image: linear-gradient(115deg,rgba(8,47,73,.94),rgba(8,145,178,.58) 55%,rgba(15,23,42,.8)), url('https://lh3.googleusercontent.com/d/1igCNnO_iNFfw9gj5pQxbofwSspa-IZ1c');
+            box-shadow: var(--shadow-lg);
+        }
+        .hero-bg::before { content:""; position:absolute; inset:0; background:linear-gradient(180deg,transparent 55%,rgba(8,47,73,.35)); pointer-events:none; }
+        .hero-bg h1 { max-width:18ch; margin-inline:auto; font-size:clamp(2rem,6vw,4.25rem)!important; line-height:1.12; letter-spacing:-.025em; text-wrap:balance; }
+        nav {
+            top:.75rem!important; width:min(calc(100% - 1.5rem),64rem); margin:-1.65rem auto 0!important; padding:.6rem!important;
+            border:1px solid rgba(255,255,255,.72)!important; border-radius:1.25rem; background:rgba(255,255,255,.84)!important;
+            box-shadow:0 16px 48px rgba(8,47,73,.14)!important;
+        }
+        .day-btn { position:relative; min-height:3.65rem; border:1px solid transparent!important; background:transparent!important; }
+        .day-btn:hover { background:rgba(8,145,178,.08)!important; transform:translateY(-2px); }
+        .day-btn.active { background:linear-gradient(135deg,#0e7490,#0891b2)!important; box-shadow:0 10px 24px rgba(8,145,178,.27)!important; }
+        main { max-width:64rem!important; padding-top:clamp(2rem,5vw,3.5rem)!important; }
+        .day-content>h2 { position:relative; overflow:hidden; padding:1rem 1.15rem!important; border:1px solid rgba(8,145,178,.16)!important; background:linear-gradient(135deg,rgba(255,255,255,.95),rgba(207,250,254,.72))!important; box-shadow:var(--shadow-sm)!important; }
+        .day-content>h2::after { content:""; position:absolute; width:7rem; height:7rem; right:-2rem; top:-3.6rem; border-radius:999px; background:rgba(34,211,238,.16); }
+        .glass-card { border-color:var(--line); background:var(--surface); box-shadow:var(--shadow-sm); transition:transform .28s ease,box-shadow .28s ease,border-color .28s ease; }
+        .glass-card:hover { transform:translateY(-3px); border-color:rgba(8,145,178,.3); box-shadow:0 18px 44px rgba(8,47,73,.13); }
+        .glass-card img { transition:transform .65s cubic-bezier(.2,.75,.2,1),filter .4s ease; }
+        .glass-card:hover img { transform:scale(1.035); filter:saturate(1.08); }
+        .chevron-icon { display:grid; place-items:center; width:2rem; height:2rem; border-radius:999px; background:#f1f5f9; transition:transform .3s ease,background .3s ease,color .3s ease; }
+        .chevron-icon.expanded { color:var(--primary); background:#cffafe; }
+        .mobile-timeline::before { width:3px; background:linear-gradient(to bottom,#06b6d4,#38bdf8 55%,rgba(56,189,248,.08)); }
+        .timeline-node { width:18px; height:18px; border:4px solid #ecfeff; box-shadow:0 0 0 4px rgba(6,182,212,.13),0 0 18px rgba(6,182,212,.55); }
+        a[class*="bg-"],button[class*="bg-"] { transition:transform .2s ease,filter .2s ease,box-shadow .2s ease!important; }
+        a[class*="bg-"]:hover,button[class*="bg-"]:hover { filter:brightness(1.04) saturate(1.06); box-shadow:0 10px 24px rgba(15,23,42,.14); }
+        footer[aria-label="快速資訊"] { left:50%!important; right:auto!important; bottom:max(.75rem,env(safe-area-inset-bottom))!important; width:min(calc(100% - 1rem),42rem); transform:translateX(-50%); padding:.55rem!important; border:1px solid rgba(255,255,255,.8)!important; border-radius:1.25rem; background:rgba(255,255,255,.9)!important; box-shadow:0 18px 55px rgba(8,47,73,.2)!important; }
+        footer[aria-label="快速資訊"] button { min-height:3.7rem; border:0!important; border-radius:.9rem; }
+        footer[aria-label="快速資訊"] button:hover { background:#ecfeff; transform:translateY(-2px); }
+        .modal { padding:1rem; align-items:center; background:rgba(2,23,35,.68); }
+        .modal-content { max-height:min(88dvh,54rem); border:1px solid rgba(255,255,255,.72); border-radius:1.5rem; box-shadow:0 30px 90px rgba(2,23,35,.32); transform:translateY(1rem) scale(.985); opacity:0; transition:transform .28s cubic-bezier(.2,.8,.2,1),opacity .2s ease; }
+        .modal.active .modal-content { transform:translateY(0) scale(1); opacity:1; }
+        @media (max-width:639px) {
+            body { padding-bottom:calc(6.5rem + env(safe-area-inset-bottom)); }
+            .hero-bg { min-height:25rem; } nav { top:.4rem!important; width:calc(100% - .75rem); border-radius:1rem; }
+            nav .day-btn { padding-inline:1rem!important; } main { padding-inline:.75rem!important; }
+            .mobile-timeline { padding-left:1.35rem; } .mobile-timeline>.relative { padding-left:.85rem!important; }
+            .timeline-node { left:-1.08rem; } .glass-card>.h-28 { height:9.5rem; } .glass-card .p-5 { padding:1rem!important; }
+            .modal { padding:0; align-items:flex-end; } .modal-content { max-height:90dvh; border-radius:1.5rem 1.5rem 0 0; padding:1.1rem; padding-bottom:calc(1.1rem + env(safe-area-inset-bottom)); }
+            footer[aria-label="快速資訊"] { bottom:max(.35rem,env(safe-area-inset-bottom))!important; }
+        }
+        @media (prefers-reduced-motion:reduce) { html{scroll-behavior:auto} *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important} }
     </style>
 </head>
 <body class="antialiased pb-28 selection:bg-cyan-200 selection:text-cyan-900">
@@ -2389,7 +2502,7 @@
 </main>
 
 <!-- 底部固定按鈕列 (4顆按鈕) -->
-<div class="fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur-md border-t border-gray-200 p-2.5 z-40 flex justify-around shadow-[0_-4px_20px_rgba(0,0,0,0.08)]">
+<footer aria-label="快速資訊" class="fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur-md border-t border-gray-200 p-2.5 z-40 flex justify-around shadow-[0_-4px_20px_rgba(0,0,0,0.08)]">
     <button onclick="openModal('flightModal')" class="flex flex-col items-center text-cyan-700 w-1/4">
         <i class="fa-solid fa-plane text-[22px] mb-1"></i>
         <span class="text-[11px] font-bold">航班資訊</span>
@@ -2409,7 +2522,7 @@
         </div>
         <span class="text-[11px] font-bold mt-0.5">時間紅線</span>
     </button>
-</div>
+</footer>
 
 <!-- ================= 彈出視窗 Modal 區域 ================= -->
 
@@ -2670,6 +2783,12 @@
 </div>
 
 <script>
+    let lastFocusedElement = null;
+    document.querySelectorAll('.day-btn').forEach((button,index)=>{button.setAttribute('type','button');button.setAttribute('role','tab');button.setAttribute('aria-controls',`day${index+1}`);button.setAttribute('aria-selected',index===0?'true':'false')});
+    document.querySelectorAll('.day-content').forEach((panel,index)=>{panel.setAttribute('role','tabpanel');panel.setAttribute('aria-labelledby',`btn-day${index+1}`)});
+    document.querySelectorAll('.modal').forEach(modal=>{modal.setAttribute('role','dialog');modal.setAttribute('aria-modal','true');modal.setAttribute('aria-hidden','true');const title=modal.querySelector('h3');if(title){title.id||=`${modal.id}-title`;modal.setAttribute('aria-labelledby',title.id)}});
+    document.querySelectorAll('[onclick="toggleCard(this)"]').forEach((trigger,index)=>{const content=trigger.querySelector('.accordion-content');if(!content)return;trigger.setAttribute('role','button');trigger.setAttribute('tabindex','0');trigger.setAttribute('aria-expanded','false');content.id||=`accordion-panel-${index+1}`;trigger.setAttribute('aria-controls',content.id);trigger.addEventListener('keydown',event=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleCard(trigger)}})});
+
     // 天數切換邏輯
     function showDay(day) {
         document.querySelectorAll('.day-content').forEach(el => {
@@ -2678,6 +2797,7 @@
         });
         document.querySelectorAll('.day-btn').forEach(el => {
             el.classList.remove('active');
+            el.setAttribute('aria-selected', 'false');
         });
         
         const target = document.getElementById('day' + day);
@@ -2691,6 +2811,7 @@
         const btn = document.getElementById('btn-day' + day);
         if (btn) {
             btn.classList.add('active');
+            btn.setAttribute('aria-selected', 'true');
             btn.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
         }
     }
@@ -2699,8 +2820,11 @@
     function openModal(id) {
         const modal = document.getElementById(id);
         if (modal) {
+            lastFocusedElement = document.activeElement;
             modal.classList.add('active');
+            modal.setAttribute('aria-hidden', 'false');
             document.body.style.overflow = 'hidden';
+            requestAnimationFrame(() => modal.querySelector('button, a, input, iframe, [tabindex]:not([tabindex="-1"])')?.focus());
         }
     }
     
@@ -2708,7 +2832,9 @@
         const modal = document.getElementById(id);
         if (modal) {
             modal.classList.remove('active');
-            document.body.style.overflow = 'auto';
+            modal.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+            lastFocusedElement?.focus();
         }
     }
 
@@ -2716,9 +2842,18 @@
     window.onclick = function(event) {
         if (event.target.classList.contains('modal')) {
             event.target.classList.remove('active');
-            document.body.style.overflow = 'auto';
+            event.target.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+            lastFocusedElement?.focus();
         }
     }
+
+    document.addEventListener('keydown', event => {
+        if (event.key === 'Escape') {
+            const activeModal = document.querySelector('.modal.active');
+            if (activeModal) closeModal(activeModal.id);
+        }
+    });
 
     // 卡片 Accordion 展開收合邏輯
     function toggleCard(element) {
@@ -2727,6 +2862,7 @@
         
         if (content) {
             content.classList.toggle('expanded');
+            element.setAttribute('aria-expanded', String(content.classList.contains('expanded')));
         }
         if (icon) {
             icon.classList.toggle('expanded');
@@ -2736,3 +2872,7 @@
 
 </body>
 </html>
+
+沖繩家族自駕行程_優化版.htmlHTML
+
+
